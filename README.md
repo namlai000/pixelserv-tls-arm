@@ -1,7 +1,7 @@
 # pixelserv-tls-arm
 Dockerized pixelserv-tls for ARM based Raspberry Pi
 
-:bulb: This project is derived from [imTHAI/docker-pixelserv-tls](https://github.com/imTHAI/docker-pixelserv-tls).
+:information_source: This project is derived from [imTHAI/docker-pixelserv-tls](https://github.com/imTHAI/docker-pixelserv-tls).
 
 ## Features
 
