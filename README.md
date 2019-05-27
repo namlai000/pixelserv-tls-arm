@@ -32,13 +32,13 @@ docker container stop $SERVICE
 docker container rm $SERVICE
 
 docker container run \
-	-d \
-	--name $SERVICE \
+    -d \
+    --name $SERVICE \
     -p 80:80 \
     -p 443:443 \
     -v $(pwd)/cache:/var/cache/pixelserv \
-	--restart unless-stopped \
-	$TAG
+    --restart unless-stopped \
+    $TAG
 
 docker container exec -it $SERVICE chown -R nobody:nobody /var/cache/pixelserv
 ```
