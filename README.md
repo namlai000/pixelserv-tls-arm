@@ -62,14 +62,13 @@ This script defines two variables named `SERVICE` and `TAG`. The `SERVICE` varia
 
 ## Final folder structure
 
-If the folder is named `pixelserv-tls-arm, then the final folder structure should look something like this,
+If the folder is named `pixelserv-tls-arm`, then the final folder structure should look something like this,
 
 ```bash
 pixelserv-tls-arm
 ├── cache
 │   ├── ca.crt
 │   └── ca.key
-├── Dockerfile
 └── run_container.sh
 
 ```
