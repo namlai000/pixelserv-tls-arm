@@ -82,4 +82,4 @@ pixelserv-tls-arm
 
 ## TODO:
 
-* Handle the error output better in the `run_container.sh` script.
+* Handle the `stderr` better in the `run_container.sh` script.
