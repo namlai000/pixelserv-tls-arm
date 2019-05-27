@@ -62,7 +62,7 @@ This script defines two variables named `SERVICE` and `TAG`. The `SERVICE` varia
 
 ## Final folder structure
 
-The final folder structure should look something like this,
+If the folder is named `pixelserv-tls-arm, then the final folder structure should look something like this,
 
 ```bash
 pixelserv-tls-arm
