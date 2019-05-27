@@ -40,7 +40,7 @@ docker container run \
     --restart unless-stopped \
     $TAG
 
-docker container exec -it $SERVICE chown -R nobody:nobody /var/cache/pixelserv
+docker container exec -it $SERVICE chown -R nobody /var/cache/pixelserv
 ```
 * Give the script executable permission by doing,
 
