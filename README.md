@@ -5,9 +5,9 @@ Dockerized pixelserv-tls for ARM based Raspberry Pi
 
 ## Features
 
-* (From >v0.2) Based on [arm32v7/debian:jessie-slim](https://hub.docker.com/r/arm32v7/debian/).
+* (From \>v0.2) Based on [arm32v7/debian:jessie-slim](https://hub.docker.com/r/arm32v7/debian/).
 * Image size is around 176MB.
-* (For <v0.2) Based on [arm32v7/debian:buster-slim](https://hub.docker.com/r/arm32v7/debian/). HTTPS connection fails for unknown reason in buster based images.
+* (For \<v0.2) Based on [arm32v7/debian:buster-slim](https://hub.docker.com/r/arm32v7/debian/). **HTTPS connection fails for unknown reason in buster based imagesi**.
 
 
 ## Using the docker image
@@ -73,6 +73,18 @@ pixelserv-tls-arm
 └── run_container.sh
 
 ```
+
+## Testing the container
+
+If the container accepts HTTPS request with the created `ca.crt`, that means the container is working as intended. To do this, one can issue the following command from the command line of the host machine,
+
+```bash
+curl https://localhost/servstats --cafile /path/to/ca.crt
+```
+**Note:** Make sure to put the real full path for the `ca.crt` file.
+
+If this command returns the html code of the `/servstats` page, that would mean the container is working as intended.
+
 
 ## What's different? Or why not [imTHAI/docker-pixelserv-tls](https://github.com/imTHAI/docker-pixelserv-tls)?
 
