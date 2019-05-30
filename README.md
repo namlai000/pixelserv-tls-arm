@@ -5,9 +5,9 @@ Dockerized pixelserv-tls for ARM based Raspberry Pi
 
 ## Features
 
-* (From \>v0.2) Based on [arm32v7/debian:jessie-slim](https://hub.docker.com/r/arm32v7/debian/).
-* Image size is around 176MB.
-* (For \<v0.2) Based on [arm32v7/debian:buster-slim](https://hub.docker.com/r/arm32v7/debian/). **HTTPS connection fails for unknown reason in buster based images**.
+* (From > v0.2) Based on [arm32v7/debian:jessie-slim](https://hub.docker.com/r/arm32v7/debian/).
+* Image size is more or less 81MB.
+* (For < v0.2) Based on [arm32v7/debian:buster-slim](https://hub.docker.com/r/arm32v7/debian/). **HTTPS connection fails for unknown reason in buster based images**.
 
 
 ## Using the docker image
