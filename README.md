@@ -7,7 +7,7 @@ Dockerized pixelserv-tls for ARM based Raspberry Pi
 
 * (From \>v0.2) Based on [arm32v7/debian:jessie-slim](https://hub.docker.com/r/arm32v7/debian/).
 * Image size is around 176MB.
-* (For \<v0.2) Based on [arm32v7/debian:buster-slim](https://hub.docker.com/r/arm32v7/debian/). **HTTPS connection fails for unknown reason in buster based imagesi**.
+* (For \<v0.2) Based on [arm32v7/debian:buster-slim](https://hub.docker.com/r/arm32v7/debian/). **HTTPS connection fails for unknown reason in buster based images**.
 
 
 ## Using the docker image
@@ -88,7 +88,7 @@ If this command returns the html code of the `/servstats` page, that would mean 
 
 ## What's different? Or why not [imTHAI/docker-pixelserv-tls](https://github.com/imTHAI/docker-pixelserv-tls)?
 
-* The [imTHAI/docker-pixelserv-tls](https://github.com/imTHAI/docker-pixelserv-tls) image is based on `alpine` image which does not work on Raspberry Pi, as it's based on ARM processor.
+* The [imTHAI/docker-pixelserv-tls](https://github.com/imTHAI/docker-pixelserv-tls) image is based on `alpine` image which does not work on Raspberry Pi, as the Pi is based on ARM processor.
 * I am not very familiar with `alpine`, so could not stabilize the `alipine` based image on my Raspberry Pi. The image was very unstable. So decided to change the base image to a `debian` based one. So far in my testing, the image is rock solid.
 * Even though the size is a bit larger compared to the `alpine` one, use of debian based image provides stability and extensibility.
 
