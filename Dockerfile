@@ -1,4 +1,4 @@
-FROM arm32v7/debian:buster-slim
+FROM arm32v7/debian:jessie-slim
 
 LABEL maintainer="Protik <protik77@gmail.com>"
 LABEL description="pixelserv-tls for arm based hardware"
