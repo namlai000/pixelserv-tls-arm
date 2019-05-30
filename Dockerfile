@@ -35,6 +35,8 @@ RUN git clone https://github.com/kvic-z/${server}.git . \
     && chmod +x $server \
     && mv $server /usr/sbin
 
+WORKDIR /usr/sbin
+
 # cleanups
 RUN rm -rf /tmp/pixelserv \
     && apt-get remove -y \
