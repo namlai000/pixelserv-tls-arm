@@ -5,7 +5,7 @@ LABEL description="pixelserv-tls for arm based hardware"
 
 # needed for automated build in docker hub.
 # for details, see: https://github.com/docker/hub-feedback/issues/1261
-COPY qemu-arm-static /usr/bin
+# COPY qemu-arm-static /usr/bin
 
 ENV server pixelserv-tls
 RUN mkdir -p /tmp/pixelserv
